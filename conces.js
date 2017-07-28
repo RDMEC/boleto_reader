@@ -19,6 +19,7 @@ module.exports.verify = function (req, res) {
     	var barcode = chunks[0].substr(0,11) + chunks[1].substr(0,11) + chunks[2].substr(0,11) + chunks[3].substr(0,11);
     	var generalDV = module(barcode, true, isMod10);
     	if(generalDV) {
+    		var valueDecimal = "Consultar Boleto Físico";
     		if(hasValue) {
     			var value = chunks[0].substr(4,7) + chunks[1].substr(0,4);
 				var valueDecimal = 'R$ ' + parseInt(value) / 100;
