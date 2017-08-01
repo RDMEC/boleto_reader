@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red16\green60\blue192;
+}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c6667\c33333\c80000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl220\partightenfactor0
+
+\f0\fs20 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Utilizar a linguagem/tecnologia que achar melhor. Escrever um programa que constr\'f3i uma API em que \'e9 dada como entrada uma linha digitada de um boleto e retorne:\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 1. \'a0 \'a0 Se a linha digitada \'e9 v\'e1lida como boleto;\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 2. \'a0 \'a0 O valor do boleto, se existir;\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 3. \'a0 \'a0 A data de vencimento do boleto, se existir;\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 4. \'a0 \'a0 Os 44 d\'edgitos correspondentes ao c\'f3digo de barras desse boleto;\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 Obs - existem 2 tipos de boletos que seguem regras diferentes:\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 a. \'a0 \'a0 \'a0Titulos banc\'e1rios\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 b. \'a0 \'a0 Pagamentos de concession\'e1rias\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 5. \'a0 \'a0 c\'f3digo deve funcionar corretamente para ambos.\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 Documenta\'e7\'e3o de referencia:\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.bb.com.br/docs/pub/emp/empl/dwn/Doc5175Bloqueto.pdf"}}{\fldrslt \cf4 \cb3 \ul \ulc4 \strokec4 http://www.bb.com.br/docs/pub/emp/empl/dwn/Doc5175Bloqueto.pdf}}\cb3 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.febraban.org.br/7Rof7SWg6qmyvwJcFwF7I0aSDf9jyV/sitefebraban/Codbar4-v28052004.pdf"}}{\fldrslt \cf4 \cb3 \ul \ulc4 \strokec4 http://www.febraban.org.br/7Rof7SWg6qmyvwJcFwF7I0aSDf9jyV/sitefebraban/Codbar4-v28052004.pdf}}\cb3 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 \'a0\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 N\'e3o h\'e1 especifica\'e7\'f5es especiais sobre a arquitetura da API, estruture os endpoints da forma que achar melhor, justificando suas escolhas sempre que poss\'edvel.\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 \'a0\
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\sl220\partightenfactor0
+\cf2 \cb3 Forma de entrega: C\'f3digo fonte. Favor incluir instru\'e7\'f5es de como rodar e testar o c\'f3digo.\
+}
