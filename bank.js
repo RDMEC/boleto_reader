@@ -5,11 +5,8 @@ module.exports.verify = function (req, res) {
 	var field3  = boleto.substr(21, 11);
 	var field4  = boleto.substr(32, 1);
 	var field5  = boleto.substr(33, 14);
-	var dv1     = module10(field1);
-	var dv2     = module10(field2);
-	var dv3     = module10(field3);
 
-	if(dv1 && dv2 && dv3) {
+	if(module10(field1) && module10(field2) && module10(field3)) {
 		var instFin = field1.substr(0,3);
 		var currency = field1.substr(3,1);
 		var pos20to24 = field1.substr(4,5);
@@ -24,9 +21,7 @@ module.exports.verify = function (req, res) {
 	}
 
 	var barcode = instFin + currency + fv + value + pos20to24 + pos25to34 + pos35to44;
-	var dv4 = module11(barcode, field4);
-	
-	if(dv4) {
+	if(module11(barcode, field4)) {
 		barcode = barcode.split('');
 		barcode.splice(4, 0, field4);
 		barcode = barcode.join('');
@@ -41,8 +36,6 @@ module.exports.verify = function (req, res) {
 		return res.status(400).send({"Boleto Válido" : false});
 	}
 }
-
-
 
 var datify = function (fv) {
 	var baseDate = new Date(1997, 9, 7)

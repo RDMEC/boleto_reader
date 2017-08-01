@@ -4,12 +4,13 @@ module.exports.verify = function (req, res) {
 	var hasValue = ['6', '8'].indexOf(boleto[2]) != -1;
 
 	var chunks = [];
-	var dvs = false;
-    chunks[0] = boleto.substr(0, 12);
-    chunks[1] = boleto.substr(12, 12);
-    chunks[2] = boleto.substr(24, 12);
-    chunks[3] = boleto.substr(36, 12);
+    var cutPos = 0
+    for(var i = 0; i < 4; i++) {
+        chunks[i] = boleto.substr(cutPos, 12);
+        cutPos = cutPos + 12;
+    }
 
+    var dvs = false;
     for(var i = 0; i < chunks.length; i++) {
     	dvs = module(chunks[i], false, isMod10);
     	if(!dvs) break;
